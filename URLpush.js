@@ -60,7 +60,7 @@ const remove = (search) => {
     else log("Key not found")
 }
 
-log(add("boulgrenn", 2))
+log(add("boul", 2))
 log(add("laj", 20))
 // 
 log(window.location.search)
