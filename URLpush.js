@@ -27,6 +27,7 @@ let couple, getter
  * se sa k fè mwen reyitilize metòd <pushState> la oubyen m te ka itilize <replaceState> tou
  */
 const update = (search, value) => {
+    urlParams = new URLSearchParams(window.location.search)
     if (urlParams.has(search)) {
         urlParams.set(search, value)
         window.history.pushState({}, '', urlParams)
@@ -62,6 +63,8 @@ const remove = (search) => {
 
 log(add("boul", 2))
 log(add("laj", 20))
+// log(urlParams)
+log(update("laj", 18))
 // 
 log(window.location.search)
 /**Limit pwogram nan:
